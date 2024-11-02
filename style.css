@@ -20,40 +20,7 @@ body {
 header {
     background-color: #8B0019;
     width: 100%;
-    padding: 30px 0;
-}
-
-.top{
-    background-image: url("./images/redheartjewelry.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    height: 700px;
-}
-
-.top__content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #eedbbfc1;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.top__title{
-    text-transform: uppercase;
-    font-size: 40px;
-    color: #8B0019;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.top__subtitle{
-    text-transform: uppercase;
-    font-size: 30px;
-    color: #8B0019;
-    text-align: center;
+    padding: 30px 0;   
 }
 
 .header__inner {
@@ -89,6 +56,38 @@ header {
 .header__link:hover {
     color: #eedbbf;
     transform: scale(1.2);
+}
+
+.top{
+    background-image: url("./images/redheartjewelry.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 700px;
+}
+
+.top__content{
+    margin: 0 auto;
+    transform: translateY(200px);
+    max-width: 800px;
+    background-color: #eedbbfc1;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.top__title{
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #8B0019;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.top__subtitle{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #8B0019;
+    text-align: center;
 }
 
 .hero {
@@ -179,6 +178,12 @@ header {
     height: 500px;
     object-fit: cover;
     max-width: 100%;
+}
+
+.categories__img-title{
+    text-align: center;
+    color: #eedbbf;
+    font-size: 40px;
 }
 
 .info{
@@ -305,4 +310,118 @@ header {
     color: #eedbbf;
     font-size: 40px;
     font-weight: 700;
+}
+
+@media (max-width: 1450px){
+    .hero__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 1250px){
+    .tables__inner{
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 1000px){
+    .top{
+        height: 500px;
+    }
+
+    .top__content{
+        transform: translateY(100px);
+    }
+
+    .info{
+        margin-top: 30px;
+    }
+
+    .info__inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 930px){
+    .categories__images{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 760px){
+    .tables__inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width: 700px){
+    .header__inner {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    .header__nav{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .header__logo {
+        margin-right: 0;
+    }
+
+    .footer__inner{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    
+}
+
+
+@media (max-width: 580px){
+    .top__content{
+        transform: translateY(70px);
+    }
+}
+
+@media (max-width: 500px){
+    .categories__img-caption{
+        width: 100%;
+        height: 100%;
+    }
+
+    .categories__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .categories{
+        margin-top: 30px;
+    }
+
+    .categories__inner{
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media (max-width: 385px){
+    .top{
+        height: 500px;
+    }
+
+    .top__content{
+        transform: translateY(40px);
+    }
+
+    .tables__list-item{
+        text-align: center;
+    }
 }
